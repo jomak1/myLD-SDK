@@ -1,11 +1,11 @@
 The Power of LaunchDarkly – Feature Management Platform
 
-What you Need to Know
+#What you Need to Know
 •	You must have a LaunchDarkly account (Free or Paid)
 •	You can use you Client side ID in the file, but never put your Server side ID in a file. Use an environmental variable for that.
 •	All naming rights owned and trademarked by Disney.
  
-How to use this file with LaunchDarkly Feature Flags 
+#How to use this file with LaunchDarkly Feature Flags 
 (Note: if you are used IKEA diagrams please be prepared for words :)
 1. Open the index.html file.  
     * Find <Client_side_ID> on line 67 & replace it with YOUR Client-side ID key from your LaunchDarkly dashboard: Account settings>Projects.
