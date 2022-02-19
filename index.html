@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="http://www.777icons.com/libs/biz-v/shield-icon.gif" />
+    <title>The Power of LaunchDarkly</title>
+    <script src="https://unpkg.com/launchdarkly-js-client-sdk@2"></script>
+  </head>
+  <body>
+  
+<style>
+  :root {
+
+}
+body{
+	background:  #403c5f49;
+	font-family: verdana;
+  font-size: 200%;
+}
+h1, h2, h3, h4 {
+	color: #1b3ba3;
+
+.footer {
+  display: flex;
+  justify-content: left;
+  margin: rem auto 5;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #fff;
+}
+
+.footer a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: verdana;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #000;
+  text-decoration: none;
+  border-style: none;
+}
+.footer a:hover {
+	background:  #e812f0;
+}
+.footer .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+</style>
+<h1>Can you resist the Power of the Darkside?</h1>
+<h2>Or do you prefer to fight against the mighty Empire?</h2>
+
+<h3>Use your LaunchDarkly dashboard to change the feature flag to see what happens</h3>
+<h4>...</h4>
+
+    <script>
+      var user1 = {
+        firstName: "Luke",
+        lastName: "Skywalker",
+        email: "jedi@knight.com",
+        key: "lu_sky",
+        role: "admin",
+        segemnt: "admin user",
+      };
+
+      var div1 = document.createElement("div1");
+      document.body.appendChild(div1);
+
+      div1.appendChild(document.createTextNode('The Power of the Darkside'));
+
+      var ldclient = LDClient.initialize('<Client_side_ID>', user1);
+
+      function render() {
+        var shouldShow = ldclient.variation("sith", false);
+        var label = (shouldShow ?  'You resisted' : 'You joined' ) + ' the Darkside ' + user1.firstName + " " + user1.lastName;
+        div1.replaceChild(document.createTextNode(label), div1.firstChild);
+      }
+
+      ldclient.on('ready', render);
+      ldclient.on('change', render);
+    </script>
+<p>
+    <script>
+      var user2 = {
+        firstName: "Han",
+        lastName: "Solo",
+        email: "solo@smugler.com",
+        key: "so_lo",
+        role: "dev",
+        segemnt: "dev user",
+
+      };
+
+      var div2 = document.createElement("div2");
+      document.body.appendChild(div2);
+
+      div2.appendChild(document.createTextNode('May the Force be with you'));
+
+      var ldclient = LDClient.initialize('My_Client_ID6', user2);
+
+      function render() {
+        var shouldShow = ldclient.variation("jedi", false);
+        var label = (shouldShow ? 'Great news, you are now the leader of the Rebels' : 'Oh No! The Rebels think you are a spy ' ) + 'General ' + user2.firstName + " " + user2.lastName;
+        div2.replaceChild(document.createTextNode(label), div2.firstChild);
+      }
+
+      ldclient.on('ready', render);
+      ldclient.on('change', render);
+    </script>
+
+</p>
+  </body>
+  
+  <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+  
+  
+  <footer class="footer">
+      <div class="links"></div>
+      <a href="https://launchdarkly.com/"
+      >
+        <img
+          src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/28d70f9f-090d-4659-8752-6be59e039986_brand-kit-wordmark.svg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&q=50"
+          alt="" />  
+      </a>
+    </footer>
+</html>
