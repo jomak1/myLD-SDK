@@ -104,7 +104,7 @@ a:not(.btn--remix):visited {
 
       function render() {
         var shouldShow = ldclient.variation("jedi", false);
-        var label = (shouldShow ? 'Great news, you are now the leader of the Rebels' : 'Oh No! The Rebels think you are a spy ' ) + 'General ' + user2.firstName + " " + user2.lastName;
+        var label = (shouldShow ? 'Great news, you are now the leader of the Rebels ' : 'Oh No! The Rebels think you are a spy ' ) + 'General ' + user2.firstName + " " + user2.lastName;
         div2.replaceChild(document.createTextNode(label), div2.firstChild);
       }
 
