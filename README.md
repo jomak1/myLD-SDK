@@ -25,8 +25,8 @@ How to use this file with LaunchDarkly Feature Flags
     * Click save flag
 3. Now open the “Sith” flag by clicking it.
     * Click on "+ Add user targets"
-    * Under true click on "Add users..." and select Luke Skywalker.
-    * Under false click on "Add users..." and select Han Solo.
+    * Under false click on "Add users..." and select Luke Skywalker.
+    * Under true click on "Add users..." and select Han Solo.
     * At the top right is “save changes” click to save
 4. We have to create another feature flag, click Create flag again and call this one “Jedi” in the Name field.
     * The Key field should be “jedi”
