@@ -1,7 +1,7 @@
 The Power of LaunchDarkly – Feature Management Platform
 
-What you Need to Know
-You must have a LaunchDarkly account (Free or Paid)
+What you Need to Know:
+You must have a LaunchDarkly account (Free or Paid).
 You can use you Client side ID in the file, but never put your Server side ID in a file. Use an environmental variable for that.
 All naming rights owned and trademarked by Disney.
 
