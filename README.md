@@ -43,8 +43,12 @@ How to use this file with LaunchDarkly Feature Flags
 
 
 
+
+
 Workflows and Segments anyone
+
 (Workflows are not allowed in a free account.  I am unable to create one)
+
 Workflows allow you to create multi-step/multi-stage processes around your flags.  They can be as simple or detailed as you need.  It allows better control for your teams to build, run, and control you apps/software.  Workflows can be defined by starting at a certain time or by having an approver.
 You can even select who can or can’t do something by using “Segments” with Workflows.  Let’s create a segment for Han and Luke.
 
